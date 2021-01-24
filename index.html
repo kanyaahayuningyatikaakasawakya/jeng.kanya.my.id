@@ -39,6 +39,10 @@
 
     <!-- Custom styles for this template -->
     <link href="/assets/custom/css/signin.css" rel="stylesheet">
+        <script src="/assets/js/query-string-parser/q2o.js"></script>
+    <script src="/assets/js/query-string-parser/o2q.js"></script>
+
+
     <script async='async' data-ad-client='ca-pub-4465156341448457' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
   </head>
 
@@ -56,22 +60,15 @@
         <button class="w-100 btn btn-lg btn-primary" type="submit">Instagram</button>
       </form>
 
-      <form>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      </form>
-
-      <form>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      </form>
-
-      <form>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      </form>
-
 
     </main>
 
-
+    <script>
+    var result = document.getElementById('result');
+    if (window.location.search) {
+        result.innerHTML = JSON.stringify(q2o(window.location.search), null, 2);
+    }
+    </script>
 
   </body>
 
