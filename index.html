@@ -65,9 +65,10 @@
     </main>
 
     <script>
-    var result = document.getElementById('result');
-    if (window.location.search) {
-        result.innerHTML = JSON.stringify(q2o(window.location.search), null, 2);
+    var config = q2o(window.location.search);
+
+    if config.to == "instagram" {
+      window.location.replace("https://www.instagram.com/kanyaahayuningyatikaakasawakya/");
     }
     </script>
 
