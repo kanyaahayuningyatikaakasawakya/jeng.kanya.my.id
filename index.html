@@ -39,10 +39,6 @@
 
     <!-- Custom styles for this template -->
     <link href="/assets/custom/css/signin.css" rel="stylesheet">
-        <script src="/assets/js/query-string-parser/q2o.js"></script>
-    <script src="/assets/js/query-string-parser/o2q.js"></script>
-
-
     <script async='async' data-ad-client='ca-pub-4465156341448457' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
   </head>
 
@@ -56,21 +52,13 @@
         </svg>
       </h1>
 
-      <form action='/' method='get'>
+      <form action='/account' method='get' target="_blank">
         <input type="hidden" name="to" value="instagram">
         <button class="w-100 btn btn-lg btn-primary" type="submit">Instagram</button>
       </form>
 
 
     </main>
-
-    <script>
-    var config = q2o(window.location.search);
-
-    if config.to == "instagram" {
-      window.location.replace("https://www.instagram.com/kanyaahayuningyatikaakasawakya/");
-    }
-    </script>
 
   </body>
 
